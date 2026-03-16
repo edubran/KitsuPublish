@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Config with real studio data — never commit your filled-in config
+# Rename kitsu_publisher_config.json.example to kitsu_publisher_config.json locally
+kitsu_publisher_config.json
+kitsu_task_panel_config.json
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary playblast frames
+*_temp_frames/

@@ -1,0 +1,29 @@
+{
+    "_comment": "Kitsu Publisher — Configuration File",
+    "_doc": "Copy this file to kitsu_publisher_config.json and fill in your values. The .json file is excluded from git via .gitignore so your server details stay private.",
+
+    "kitsu_host":     "https://your-kitsu-server.com/api",
+    "kitsu_base_url": "https://your-kitsu-server.com",
+
+    "_comment_auth": "Environment variable names for auto-login. Set these in your OS or DCC launcher.",
+    "env_user_var": "KITSU_USER",
+    "env_pass_var": "KITSU_PASS",
+
+    "_comment_paths": "Paths added to sys.path before importing gazu and requests. Use forward slashes or double backslashes on Windows.",
+    "sys_paths": [
+        "/path/to/your/scripts",
+        "/path/to/gazu",
+        "/path/to/requests"
+    ],
+
+    "_comment_statuses": "Status names shown in the publish dropdown. Must match your Kitsu server exactly (Settings > Task Statuses).",
+    "authorized_statuses": [
+        "Waiting For Approval",
+        "Work In Progress",
+        "Slap Comp",
+        "Published"
+    ],
+
+    "_comment_discord": "Optional Discord webhook URL. Notifications are only sent if this field is filled in. Leave empty to disable.",
+    "discord_webhook_url": ""
+}
